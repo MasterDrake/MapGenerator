@@ -1,6 +1,6 @@
 MapGenerator
 ============
-A port of the original [https://github.com/Rellikiox/MapGenerator](Map Generator) by Rellikiox
+A port of the original [Map Generator](https://github.com/Rellikiox/MapGenerator) by Rellikiox.
 Generation of procedural maps. The main idea behind the algorithm is taken from [Amit's Polygonal Map Generation for Games](http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/).
 It has the following steps:
 * Place a number of random but uniformly distributed points (using Poisson Disk Sampling).
