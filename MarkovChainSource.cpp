@@ -8,7 +8,7 @@ int main(int argc, char * argv[])
 	std::vector<std::string> names;
 
 	std::ifstream names_file;
-	names_file.open("../../../names.txt", std::ios::in);
+	names_file.open("../../../Resources/names.txt", std::ios::in);
 
 	if(!names_file.is_open())
 		return 0;	
