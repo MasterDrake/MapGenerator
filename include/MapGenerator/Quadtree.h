@@ -53,16 +53,6 @@ class QuadTree
 {
 public:
 
-	QuadTree(void)
-	{
-		m_northWest = NULL;
-		m_northEast = NULL;
-		m_southWest = NULL;
-		m_southEast = NULL;
-		m_divided = false;
-		m_branch_depth = 0;
-	}
-
 	~QuadTree(void) {
 		if(m_divided){
 			delete m_northWest;
@@ -272,13 +262,13 @@ private:
 	std::vector<T> m_elements;
 	std::vector<AABB> m_elements_regions;
 
-	QuadTree *m_northWest;
-	QuadTree *m_northEast;
-	QuadTree *m_southEast;
-	QuadTree *m_southWest;
+	QuadTree *m_northWest{nullptr};
+	QuadTree *m_northEast{nullptr};
+	QuadTree *m_southEast{nullptr};
+	QuadTree* m_southWest{nullptr};
 
-	bool m_divided;
-	int m_branch_depth;
+	bool m_divided{ false };
+	int m_branch_depth{ 0 };
 	int m_elements_branch;
 };
 

@@ -537,7 +537,7 @@ void Map::Triangulate(std::vector<del::vertex> puntos)
 
 	dela.Triangulate(v, tris);
 
-	for (del::triangle t : tris)
+	for (const del::triangle& t : tris)
 	{
 		Vec2 pos_center_0( t.GetVertex(0)->GetX(), t.GetVertex(0)->GetY());
 		Vec2 pos_center_1( t.GetVertex(1)->GetX(), t.GetVertex(1)->GetY());

@@ -91,8 +91,8 @@ void drawCenter(center* c, sf::RenderWindow& window);
 
 struct city
 {
-	std::string name;
-	center* cell;
+	std::string name{};
+	center* cell{};
 };
 
 int main()
